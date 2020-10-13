@@ -18,8 +18,7 @@ def contact(request):
             message_name,#temat
             message,#treść wiadomości
             message_email,#od kogo
-            ['stefan.kicia@gmial.com'],#do kogo
-            fail_silently=False,
+            ['stefan.kicia@gmail.com'],#do kogo
             )
 
         return render(request, 'contact.html', {'message_name': message_name})
